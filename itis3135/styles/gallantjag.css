@@ -1,0 +1,20 @@
+body{
+    background-color:black;
+    text-align: center;
+    color: green;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a {
+    color:white;
+    text-align: none;
+}
+a:hover{
+    color:gray;
+}
+main{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h2{
+    text-align: center;
+}
