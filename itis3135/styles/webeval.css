@@ -1,0 +1,16 @@
+body{
+    background-color:darkturquoise;
+    color: blueviolet;
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    text-align:center;
+}
+a {
+    color:brown;
+    text-align: none;
+}
+a:hover{
+    color:beige;
+}
