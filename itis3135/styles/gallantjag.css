@@ -1,20 +1,40 @@
-body{
-    background-color:black;
-    text-align: center;
-    color: green;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-a {
-    color:white;
-    text-align: none;
-}
-a:hover{
-    color:gray;
-}
-main{
-    margin-left: 20%;
-    margin-right: 20%;
-}
-h2{
-    text-align: center;
-}
+body {
+            background-color: black;
+            text-align: center;
+            color: green;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        a {
+            color: white;
+            text-align: none;
+        }
+
+        a:hover {
+            color: gray;
+        }
+
+        main {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .copyright {
+
+            position: fixed;
+
+            left: 0;
+
+            right: 0;
+
+            bottom: 0;
+
+            margin-top: 0;
+
+            z-index: 8000;
+
+        }
