@@ -1,20 +1,44 @@
-body{
-    background-color:darkturquoise;
-    text-align: center;
-    color: blueviolet;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body {
+  background-color: darkturquoise;
+  text-align: center;
+  color: blueviolet;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 a {
-    color:brown;
-    text-align: none;
+  color: brown;
+  text-decoration: none;
 }
-a:hover{
-    color:beige;
+a:hover {
+  color: beige;
 }
-main{
-    margin-left: 20%;
-    margin-right: 20%;
+main {
+  background: #fff;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
-h2{
-    text-align: center;
+h2 {
+  text-align: center;
+  font-size: 1.2em;
+}
+@media screen and (min-width: 601px) and (max-width: 980px) {
+  body {
+    background-color: lightseagreen;
+  }
+  main {
+    width: 95%;
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 600px) {
+  body {
+    background-color: teal;
+    font-size: 16px;
+  }
+  main {
+    width: 95%;
+    max-width: 500px;
+  }
 }
