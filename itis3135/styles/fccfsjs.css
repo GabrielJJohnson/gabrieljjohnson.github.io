@@ -60,10 +60,6 @@ input[type="checkbox"] {
   cursor: pointer;
   accent-color: #4a8c3f;
 }
-tfoot td {
-  background-color: #e7dfc6;
-  font-weight: bold;
-}
 footer p {
   margin: 0;
   font-size: 0.9em;
