@@ -1,18 +1,23 @@
-body{
-    background-color:darkturquoise;
-    color: blueviolet;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body {
+    background-color: #003f5c;
+    color: #f8f9fa;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-h2{
-    text-align:center;
+h2 {
+    text-align: center;
+    color: #ffa600;
 }
-header{
-    text-align:center;
+
+header {
+    text-align: center;
+    color: #ffcc00;
 }
+
 a {
-    color:brown;
-    text-align: none;
+    color: #00b4d8;
+    text-decoration: none;
 }
-a:hover{
-    color:beige;
+
+a:hover {
+    color: #ff6b6b;
 }
