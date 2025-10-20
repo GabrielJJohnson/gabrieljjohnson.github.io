@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weightlifting Hobby Page</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+<style>
+    body {
+        font-family: "Poppins", "Segoe UI", sans-serif;
+        background-color: #1e1e2f; /* Deep indigo background */
+        color: #e6e6fa; /* Light lavender text */
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    header, footer {
+        background-color: #2e2e46; /* Slightly lighter indigo for contrast */
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    h1, h2 {
+        color: #ffcc70; /* Warm gold for headings */
+        margin: 0.5em 0;
+    }
+
+    p {
+        line-height: 1.6;
+        max-width: 700px;
+        margin: 0.5em auto;
+        font-size: 1.1em;
+    }
+
+    main {
+        padding: 1rem 0 2rem;
+    }
+
+    section {
+        display: none;
+        animation: fadeIn 0.6s ease-in-out;
+    }
+
+    section:not([hidden]) {
+        display: block;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+        margin: 0.5rem 0;
+    }
+
+    nav a {
+        color: #70e0ff; /* Bright aqua */
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.3rem 0.7rem;
+        transition: color 0.3s, background-color 0.3s;
+        border-radius: 6px;
+    }
+
+    nav a:hover {
+        color: #1e1e2f;
+        background-color: #70e0ff;
+    }
+
+    nav a:focus {
+        outline: 2px solid #ffcc70;
+        outline-offset: 2px;
+    }
+
+    /* ===== FIGURES & IMAGES ===== */
+    figure {
+        margin: 2em auto;
+        max-width: 600px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+
+    figcaption {
+        margin-top: 0.5em;
+        font-style: italic;
+        color: #c0c0e0;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+        font-size: 0.9em;
+        margin-top: 2rem;
+        border-top: 2px solid #ffcc70;
+    }
+
+    footer a {
+        color: #ffcc70;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+
+    /* ===== LISTS ===== */
+    ul {
+        list-style: none;
+        padding: 0;
+        max-width: 700px;
+        margin: 1rem auto;
+    }
+
+    li {
+        background-color: #2e2e46;
+        margin: 0.5rem 0;
+        padding: 0.7rem;
+        border-radius: 8px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+        nav a {
+            display: block;
+            margin: 0.3rem auto;
+        }
+        p, li {
+            font-size: 1em;
+        }
+    }
+</style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <div data-include="../components/header.html"></div>
+        <h1>Weightlifting</h1>
+        <nav>
+            <a href="#what">What</a> 
+            <a href="#who">Who</a> 
+            <a href="#when">When</a> 
+            <a href="#where">Where</a> 
+            <a href="#how">How</a> 
+            <a href="#why">Why</a> 
+            <a href="#ai-prompts">AI Prompts</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- WHAT Section (Default/Home) -->
+        <section id="what">
+            <h2>What?</h2>
+            <p>Weightlifting is excersise involving weights.  I have been lifting for the good part of five or six years now, starting mainly because of football in highschool.
+            <figure>
+                <img src="images/chatgpt_image_for_what.png" alt="can you please make me picture of a barbell with weights on it">
+                <figcaption>The barbell is the quintessential depiction of weightroom equipment</figcaption>
+                <p><em>"can you please make me picture of a barbell with weights on it”</em></p>
+            </figure>
+        </section>
+
+        <!-- WHO Section -->
+        <section id="who" hidden>
+            <h2>Who?</h2>
+            <p>I have been lifting since early high school.  It is one of my favorite parts of the day, and I believe it keeps me sane a lot of the time.</p>
+
+            <figure>
+                <img src="images/me_at_gym.png" alt="A picture of me after a lift.">
+                <figcaption>I have made a lot of progress, but there is always more to make.</figcaption>
+            </figure>
+        </section>
+
+        <!-- WHEN Section -->
+        <section id="when" hidden>
+            <h2>When?</h2>
+            <p>During the current semester I have mainly been going in the mornings and weekends.  I try my best to go at least five days a week, but sometimes those freeCodeCamps can pile up.</p>
+
+            <figure>
+                <img src="images/chatgpt_image_for_when.png" alt="Empty gym in the early morning">
+                <figcaption>Lifting in the morning so I can skip the crowd.</figcaption>
+                <p><em>AI prompt: “can you please make a picture of the sun rising at a gym”</em></p>
+            </figure>
+        </section>
+
+        <!-- WHERE Section -->
+        <section id="where" hidden>
+            <h2>Where?</h2>
+            <p>I have been going to the UREC to lift since starting at UNCC Fall of 2024.  Before that, I went to two different gyms in my hometown, the Rock and Club Fitness.</p>
+
+            <figure>
+                <img src="images/chatgpt_image_for_where.png" alt="school gym">
+                <figcaption>A school gym, which I find remarkably similar to a gym at sunrise.</figcaption>
+                <p><em>AI prompt: “can you please generate an image of a gym at a school”</em></p>
+            </figure>
+        </section>
+
+        <!-- HOW Section -->
+        <section id="how" hidden>
+            <h2>How?</h2>
+            <p>Combining training and proper diet, anyone can achieve their goals in the gym.  Lifting is most optimal when taking most working sets to failure.  To efficiently reach goals, diet is just as important as good technique and drive.  My dad always told me, "abs are made in the kitchen."</p>
+            <figure>
+                <img src="images/chatgpt_image_for_how.png" alt="Clipart of an arm">
+                <figcaption>How I feel after three sets of hammer curls</figcaption>
+                <p><em>AI prompt: “can you please generate a clipart style image of a muscular arm”</em></p>
+            </figure>
+        </section>
+
+        <!-- WHY Section -->
+        <section id="why" hidden>
+            <h2>Why?</h2>
+            <p>Staying healthy and excersising is important for everyone.  I used to be very unhealthy growing up, and wanted to change that.  As a society I believe we have a collective obligation to do better in this matter.</p>
+
+            <figure>
+                <img src="images/chatgpt_image_for_why.png" alt="Clipart of a healthy man">
+                <figcaption>The goal: to be happy and healthy.</figcaption>
+                <p><em>AI prompt: “can you please generate a clipart of a healthy, muscular man”</em></p>
+            </figure>
+        </section>
+
+        <!-- AI PROMPTS Section -->
+        <section id="ai-prompts" hidden>
+            <h2>AI Prompts Used</h2>
+            <ul>
+                <li>"can you please make me an outline for the following html document: " - I ended up pasting some points from the assignment page here, but lost my original conversation.  There was some back and forth to get the outcomes I wanted, though.</li>
+                <li>"can you please make me an outline of an embedded stylesheet for this project : [pasted my code] following these guidelines: Styling should follow CRAP principles. No Times New Roman, no generic blue underlined links, no plain white background, no plain black text.</li>
+                <li>"can you please help create an outline for navigating, in a single page, the who, what, when, where, how, why, and AI Prompts sections of following code [pasted my code here] with the following guidelines: Add links in the header/nav to switch between sections.  Use CSS/JS so only the selected section is visible at a time (like a single-page app).  Use a unique divider symbol (emoji or special character) different from your other pages.  The What (Home) section should be the default visible page.</li>
+                <li>“can you please make me picture of a barbell with weights on it”</li>
+                <li>“can you please make a picture of the sun rising at a gym”</li>
+                <li>"can you please generate a clipart style image of a muscular arm"</li>
+                <li>“can you please generate a clipart of a healthy, muscular man”</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+      <div data-include="../components/footer.html"></div>
+    </footer>
+    <script src="../scripts/HTMLInclude.min.js"></script>
+
+    <script>
+        // Simple JS to toggle visible sections
+        const links = document.querySelectorAll("nav a");
+        const sections = document.querySelectorAll("main section");
+
+        links.forEach(link => {
+            link.addEventListener("click", e => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute("href"));
+                sections.forEach(sec => sec.hidden = true);
+                target.hidden = false;
+            });
+        });
+    </script>
+</body>
+</html>
