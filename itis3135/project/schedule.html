@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Schedule — Bible Study</title>
+<link rel="stylesheet" href="../styles/project.css">
+<script
+      src="https://lint.page/kit/4d0fe3.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+<header class="site-header">
+     <div data-include="../components/header.html"></div>
+<div class="container header-inner">
+<h1 class="logo">BibleStudy</h1>
+<nav id="main-nav" class="nav">
+<a href="index.html" class="nav-link">Home</a>
+<a href="about.html" class="nav-link">About</a>
+<a href="course.html" class="nav-link">Course Summary</a>
+<a href="schedule.html" class="nav-link active">Schedule</a>
+<a href="contact.html" class="nav-link">Contact</a>
+</nav>
+<button id="nav-toggle" class="nav-toggle" aria-expanded="false">☰</button>
+</div>
+</header>
+<main class="container">
+<h2>Study Schedule & Checklist</h2>
+<p>Use the checklist to track which sections you've completed. Your progress is saved locally in the browser.</p>
+<section id="checklist-section">
+<ul id="checklist" class="checklist">
+<li><label><input type="checkbox" data-id="reading-1"> Reading 1 — Matthew 1-7</label></li>
+<li><label><input type="checkbox" data-id="reading-2"> Reading 2 — Mark 1-8</label></li>
+<li><label><input type="checkbox" data-id="reading-3"> Reading 3 — Luke 1-8</label></li>
+<li><label><input type="checkbox" data-id="reading-4"> Reading 4 — John 1-5</label></li>
+</ul>
+<button id="clear-checklist">Clear progress</button>
+</section>
+</main>
+<footer>
+    <div data-include="../components/footer.html"></div>
+</footer>
+<script src="../scripts/HTMLInclude.min.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
