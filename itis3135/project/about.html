@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
@@ -7,59 +8,76 @@
 <script
       src="https://lint.page/kit/4d0fe3.js"
       crossorigin="anonymous"
-    ></script>
+></script>
+<style>
+  .collapsible {
+    width: 100%;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.1em;
+    transition: background-color 0.2s ease;
+  }
+
+  .collapsible:hover {
+    background-color: #ddd;
+  }
+
+  .collapsible.active {
+    background-color: #ccc;
+  }
+
+  .collapsible-box {
+    display: none;
+    padding: 0 10px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-left: 3px solid #ccc;
+    margin-bottom: 10px;
+  }
+</style>
 </head>
 <body>
 <header class="site-header">
-     <div data-include="../components/header.html"></div>
-<div class="container header-inner">
-<h1 class="logo">BibleStudy</h1>
-<nav id="main-nav" class="nav">
-<a href="index.html" class="nav-link">Home</a>
-<a href="about.html" class="nav-link active">About</a>
-<a href="course.html" class="nav-link">Course Summary</a>
-<a href="schedule.html" class="nav-link">Schedule</a>
-<a href="contact.html" class="nav-link">Contact</a>
-</nav>
-<button id="nav-toggle" class="nav-toggle" aria-expanded="false">☰</button>
-</div>
+  <div data-include="../components/header.html"></div>
+  <div class="container header-inner">
+    <h1 class="logo">BibleStudy</h1>
+    <nav id="main-nav" class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active">About</a>
+      <a href="course.html" class="nav-link">Course Summary</a>
+      <a href="schedule.html" class="nav-link">Schedule</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
 </header>
-
-
 <main class="container">
-<h2>About This Project</h2>
-<p>This website is built to help learners follow a readable, trackable New Testament study plan. Below you will find the client and wireframe information.</p>
-
-
-<section class="client-info">
-<h3>Client Information</h3>
-<h4>Luke Travers</h4>
-<ul>
-<li>Servant of the Lord, student of Charlotte</li>
-<li>Email: <a href="mailto:ltravers@charlotte.edu">ltravers@charlotte.edu</a></li>
-</ul>
-</section>
-
-
-<section class="wireframes">
-<h3>Wireframe & Site Map</h3>
-<img src="images/Wireframe.jpg" alt="Wireframe" class="responsive-img">
-<img src="images/SiteMap.jpg" alt="Site Map" class="responsive-img">
-</section>
-
-
-<section>
-<h3>Design Choices</h3>
-<p>Clean, readable typography, accessible navigation, and small interactive elements (collapsible sections, checklist) make the experience friendly for all ages.</p>
-</section>
+  <h2>About This Project</h2>
+  <p>This website is built to help learners follow a readable, trackable New Testament study plan.</p>
+  <section class="collapsible-section">
+    <button class="collapsible">Client Information</button>
+    <div class="collapsible-box">
+      <h4>Luke Travers</h4>
+      <ul>
+        <li>Servant of the Lord, student of Charlotte</li>
+        <li>Email: <a href="mailto:ltravers@charlotte.edu">ltravers@charlotte.edu</a></li>
+      </ul>
+    </div>
+  </section>
+  <section class="collapsible-section">
+    <button class="collapsible">Design Choices</button>
+    <div class="collapsible-box">
+      <p>Clean and easily accessible.</p>
+    </div>
+  </section>
 </main>
-
-
 <footer>
-    <div data-include="../components/footer.html"></div>
+  <div data-include="../components/footer.html"></div>
 </footer>
 <script src="../scripts/HTMLInclude.min.js"></script>
-
-<script src="scripts/main.js"></script>
+<script src="../scripts/proj_about.js"></script>
 </body>
 </html>
