@@ -1,14 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
   const collapsibleButtons = document.querySelectorAll(".collapsible");
-  collapsibleButtons.forEach(button => {
-    const box = button.nextElementSibling;
+  collapsibleButtons.forEach((button) => {
+    const content = button.nextElementSibling;
+    content.style.maxHeight = "0px";
+    content.style.overflow = "hidden";
+    content.style.transition = "max-height 0.4s ease";
     button.addEventListener("click", () => {
-      const isOpen = box.style.display === "block";
+      const isOpen = content.style.maxHeight !== "0px";
       if (isOpen) {
-        box.style.display = "none";
+        content.style.maxHeight = "0px";
         button.classList.remove("active");
       } else {
-        box.style.display = "block";
+        content.style.maxHeight = content.scrollHeight + "px";
         button.classList.add("active");
       }
     });

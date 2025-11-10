@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const headers = document.querySelectorAll(".module-header");
-  headers.forEach(header => {
+  headers.forEach((header) => {
     const content = header.nextElementSibling;
     content.style.maxHeight = "0px";
     content.style.overflow = "hidden";
