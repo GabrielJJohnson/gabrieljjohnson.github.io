@@ -1,86 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>About — Bible Study</title>
-<link rel="stylesheet" href="../styles/project.css">
-<script
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About — Bible Study</title>
+    <link rel="stylesheet" href="../styles/project.css" />
+    <script
       src="https://lint.page/kit/4d0fe3.js"
       crossorigin="anonymous"
-></script>
-<style>
-  .collapsible {
-    width: 100%;
-    background-color: #eee;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 10px;
-    text-align: left;
-    font-size: 1.1em;
-    transition: background-color 0.2s ease;
-  }
+    ></script>
+    <style>
+      .collapsible {
+        width: 100%;
+        background-color: #eee;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px;
+        text-align: left;
+        font-size: 1.1em;
+        transition: background-color 0.2s ease;
+      }
 
-  .collapsible:hover {
-    background-color: #ddd;
-  }
+      .collapsible:hover {
+        background-color: #ddd;
+      }
 
-  .collapsible.active {
-    background-color: #ccc;
-  }
+      .collapsible.active {
+        background-color: #ccc;
+      }
 
-  .collapsible-box {
-    display: none;
-    padding: 0 10px;
-    overflow: hidden;
-    background-color: #f9f9f9;
-    border-left: 3px solid #ccc;
-    margin-bottom: 10px;
-  }
-</style>
-</head>
-<body>
-<header class="site-header">
-  <div data-include="../components/header.html"></div>
-  <div class="container header-inner">
-    <h1 class="logo">BibleStudy</h1>
-    <nav id="main-nav" class="nav">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link active">About</a>
-      <a href="course.html" class="nav-link">Course Summary</a>
-      <a href="schedule.html" class="nav-link">Schedule</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-    </nav>
-  </div>
-</header>
-<main class="container">
-  <h2>About This Project</h2>
-  <p>This website is built to help learners follow a readable, trackable New Testament study plan.</p>
- <section class="collapsible-area">
-  <button class="collapsible">Why this course?</button>
-  <div class="collapsible-box">
-    <p>
-      This program is designed to help readers deepen their knowledge of the
-      New Testament using short readings, guided questions, and a simple
-      tracking interface.
-    </p>
-  </div>
+      .collapsible-box {
+        display: none;
+        padding: 0 10px;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-left: 3px solid #ccc;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="logo">BibleStudy</h1>
+        <nav id="main-nav" class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link active">About</a>
+          <a href="course.html" class="nav-link">Course Summary</a>
+          <a href="schedule.html" class="nav-link">Schedule</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h2>About This Project</h2>
+      <p>
+        This website is built to help learners follow a readable, trackable New
+        Testament study plan.
+      </p>
+      <section class="collapsible-area">
+        <button class="collapsible">Why this course?</button>
+        <div class="collapsible-box">
+          <p>
+            This program is designed to help readers deepen their knowledge of
+            the New Testament using short readings, guided questions, and a
+            simple tracking interface.
+          </p>
+        </div>
 
-  <button class="collapsible">Who is it for?</button>
-  <div class="collapsible-box">
-    <p>
-      Anyone who wants a structured, gentle approach to reading and studying
-      the New Testament: students, church groups, or independent readers.
-    </p>
-  </div>
-</section>
-
-</main>
-<footer>
-  <div data-include="../components/footer.html"></div>
-</footer>
-<script src="../scripts/HTMLInclude.min.js"></script>
-<script src="../scripts/proj_about.js"></script>
-</body>
+        <button class="collapsible">Who is it for?</button>
+        <div class="collapsible-box">
+          <p>
+            Anyone who wants a structured, gentle approach to reading and
+            studying the New Testament: students, church groups, or independent
+            readers.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Page Built by <a href="jojounlimited.org/">JoJo Unlimited</a>&copy; 2025
+      </p>
+    </footer>
+    <script src="../scripts/HTMLInclude.min.js"></script>
+    <script src="../scripts/proj_about.js"></script>
+  </body>
 </html>
