@@ -11,25 +11,25 @@
     ></script>
     <style>
       .collapsible {
-        width: 100%;
+        display: block;
         background-color: #eee;
         border: none;
-        outline: none;
         cursor: pointer;
         padding: 10px;
         text-align: left;
         font-size: 1.1em;
         transition: background-color 0.2s ease;
       }
-
+      .collapsible:focus {
+        outline: 3px solid #2a6f97;
+        outline-offset: 2px;
+      }
       .collapsible:hover {
         background-color: #ddd;
       }
-
-      .collapsible.active {
+      .active {
         background-color: #ccc;
       }
-
       .collapsible-box {
         display: none;
         padding: 0 10px;
